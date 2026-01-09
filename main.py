@@ -9,8 +9,8 @@ from pygments.lexers import markup
 from telebot import types
 from cities_data import ALL_CITIES
 
-BOT_TOKEN = os.getenv('8497728744:AAGUHaS9qE8vO4rKSw_yHeRn6VuZlmoChhQ')
-bot = telebot.TeleBot('8497728744:AAGUHaS9qE8vO4rKSw_yHeRn6VuZlmoChhQ')
+BOT_TOKEN = os.getenv(ENTER_BOT_TOKEN)
+bot = telebot.TeleBot(ENTER_BOT_TOKEN)
 OWNER_ID = 8281653308
 
 # Глобальные переменные
@@ -156,4 +156,5 @@ if __name__ == '__main__':
     print("Бот запущен и работает на GitVerse!")
 
     bot.polling(none_stop=True, interval=0)
+
 
